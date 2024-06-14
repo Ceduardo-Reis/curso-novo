@@ -10,6 +10,8 @@ body {
 
 .a {
     text-decoration: none;
+    background: rgb(5, 55, 219); 
+    color: white;
 }
 
 .btn{
@@ -28,23 +30,25 @@ body {
     background: rgb(64, 171, 207);
 }
 
-.headline {
+ .headline { 
     font-size: 2.2rem;
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
     padding-bottom: 50px;
     letter-spacing: 2px;
-}
+ } 
 
 /* navbar */
 
 #navbar {
     width: 100%;
-    background: rgb(117, 154, 231);
-    color: black; 
+    background: rgb(182, 61, 5);
+    color: white; 
     height: 80px;
+    position:fixed;
 }
+
 
 #navbar-container {
     width: 80%;
@@ -61,13 +65,21 @@ body {
  
 #navbar-itens {
     display: flex;
-    list-style: none;
+    list-style: none; 
     text-transform: uppercase;  
+    
+    
 }
 
-#navbar-itens li {
+
+
+#navbar-itens li a {
     padding: 10px;
     margin-right: 20px;
+    text-decoration: none;
+    color:#eee;
+
+   
 }
 
 /* showcase */
@@ -101,6 +113,7 @@ body {
 /* ---------- */
 
 #concursosabertos {
+    height: 40vh;
     width: 100%;
     background: #eee;
     color:#111;
@@ -108,85 +121,130 @@ body {
 }
 .concursosabertos {
     display: inline-block;
-    width: 25%;
+    width: 20%;
 
 }
 
-#concursosabertos-container{
+#concursosabertos-container  {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
-    padding: 15px;
+    padding: 5px;
+    
 }
 
-/* ----------- */
 
-#editais {
+
+/* tabela  */
+#editais-container {
+    padding: 1rm;
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    width: 80%;
+
+    border-collapse: separate;
+    margin: 1rem 0;
+    background-color: #f9f9f9;
+    border-spacing: 0 10px;
+
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 0.75rem;
+    text-align: center;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; 
+
+}
+
+
+tr:hover {
+    background-color: #ddd;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+ #editais { 
     width: 100%;
     background: #7babe2;
     color:#111;
-    padding: 50px;
-}
-.editais  {
-    display: inline-block;
-    width: 25%;
-
+    padding: 60px;
 }
 
-#editais-container{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
-    padding: 15px;
-
-}
-
-/* ---------- */
-
+/* ----------- */
 #produto {
     width: 100%;
     background:darkgray;
     color:#111;
-    padding: 50px;
+    padding: 25px;
 }
 .produto  {
     display: inline-block;
-    width: 25%;
+    width: 50%;
 
 }
 
 #produto-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     justify-items: center;
-    padding: 15px;
+    padding: 20px;
 }
+
+/* pagamento */
 
 #pagamento {
     width: 100%;
     background: white;
     color:#111;
-    padding: 50px;
+    padding: 5px;
 }
-.pagamento  {
+.iconpagamento  {
     display: inline-block;
-    width: 25%;
+    text-align: right;
+    width: 10%;
 
 }
 
 #pagamento-container {
-    display: grid;
-     grid-template-columns: repeat(4, 1fr); 
-    justify-items: center;
-    padding: 15px;
+    
+    display: grid; 
+    grid-template-columns: repeat(1, 1fr);  
+    justify-items:left;
+    padding: 5px; 
+    text-align:left;
 }
 
 #footer {
-    /* background: #222; */
     color:#110c0c;
-    padding: 30px;
+    padding: 5px;
     text-align: center;
 }
+
+
+
+
+    
+    
+    
 
 
 
